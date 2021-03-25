@@ -20,19 +20,21 @@ const ResultTable = (props) => {
     <div className="table-wrapper">
       <h2>Result</h2>
       <table className="table">
-        <tr>
-          <th>Roll Number</th>
-          <th>Result</th>
-        </tr>
-        {data.map((result) => {
-          return (
-            <TableRow
-              key={result.rollnumber}
-              rollnumber={result.rollnumber}
-              result={result.status}
-            />
-          );
-        })}
+        <tbody>
+          <tr>
+            <th>Roll Number</th>
+            <th>Result</th>
+          </tr>
+          {data.map((result) => {
+            return (
+              <TableRow
+                key={result.rollnumber}
+                rollnumber={result.rollnumber}
+                result={result.status}
+              />
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );

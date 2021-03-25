@@ -17,7 +17,7 @@ const InputForm = (props) => {
 
   const getResult = async () => {
     let apiUrl = "http://localhost:3080/api/results";
-    console.log("here");
+    // console.log("here");
     if (inputText.length === 0) return;
     setToggle(false);
     if (process.env.NODE_ENV === "production") {
