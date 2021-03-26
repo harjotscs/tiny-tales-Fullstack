@@ -35,7 +35,7 @@ const InputForm = (props) => {
     <div className="form">
       {Toggle ? (
         <React.Fragment>
-          <h1>Enter Rollnumbers</h1>
+          <h1>Enter Roll Numbers</h1>
           <br />
           <br />
           <input

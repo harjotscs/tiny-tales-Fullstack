@@ -1,22 +1,53 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors");
 
 const port = process.env.PORT || 3080;
 
 const app = express();
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin,X-Requested-With,Content-Type,Accept,Authorization"
-  );
-  if (req.method === "OPTIONS") {
-    res.header("Access-Control-Allow-Methods", "GET");
+
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin,X-Requested-With,Content-Type,Accept,Authorization"
+//   );
+//   if (req.method === "OPTIONS") {
+//     res.header("Access-Control-Allow-Methods", "GET");
+//   }
+//   next();
+// });
+
+app.use(cors());
+app.get("/api/results", async (req, res) => {
+  if (!req.query.rollnumbers) {
+    return res
+      .status(400)
+      .send({ Error: "You must pass atleast one roll number" });
   }
-  next();
+  const rollnumbers = req.query.rollnumbers.split(",");
+  const result = [];
+  let links = [];
+  for (rollnumber of rollnumbers) {
+    if (rollnumber != "") {
+      links.push(
+        `https://terriblytinytales.com/testapi?rollnumber=${rollnumber}`
+      );
+    }
+  }
+  const responses = await axios.all(links.map((link) => axios.get(link)));
+  let i = 0;
+  for (response of responses) {
+    result.push({
+      rollnumber: rollnumbers[i],
+      status: response.data,
+    });
+    i++;
+  }
+  res.status(200).send(result);
 });
 
-app.get("/api/results", async (req, res) => {
+app.get("/api/results/m2", async (req, res) => {
   if (!req.query.rollnumbers) {
     return res
       .status(400)
@@ -38,6 +69,8 @@ app.get("/api/results", async (req, res) => {
   res.status(200).send(result);
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server up and running on ${port}`);
 });
+
+server.timeout = 240000;
