@@ -41,7 +41,7 @@ const InputForm = (props) => {
           <input
             className="form-control"
             type="text"
-            placeholder="Enter Rollnumbers"
+            placeholder="Enter Roll Numbers"
             onChange={handleChange}
             value={inputText}
           />
