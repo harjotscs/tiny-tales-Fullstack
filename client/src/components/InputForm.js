@@ -5,6 +5,9 @@ const InputForm = (props) => {
   const [Toggle, setToggle] = useState(true);
 
   const handleChange = (event) => {
+    if (event.currentTarget.value.includes(" ")) {
+      event.currentTarget.value = event.currentTarget.value.replace(/\s/g, "");
+    }
     const newValue = event.target.value;
     setInputText(newValue);
   };
