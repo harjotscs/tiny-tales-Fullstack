@@ -48,6 +48,9 @@ const InputForm = (props) => {
             onChange={handleChange}
             value={inputText}
           />
+          <h4>
+            Multiple Roll Numbers need to be sepreated using "," like 2,3,4
+          </h4>
           <button
             className="btn"
             onClick={() => {
@@ -59,6 +62,14 @@ const InputForm = (props) => {
         </React.Fragment>
       ) : (
         <React.Fragment>
+          <div className="sk-chase">
+            <div className="sk-chase-dot"></div>
+            <div className="sk-chase-dot"></div>
+            <div className="sk-chase-dot"></div>
+            <div className="sk-chase-dot"></div>
+            <div className="sk-chase-dot"></div>
+            <div className="sk-chase-dot"></div>
+          </div>
           <p style={customStyles}>
             Please Wait Your Request Is Being Processed
           </p>

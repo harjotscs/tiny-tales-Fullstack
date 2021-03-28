@@ -18,7 +18,7 @@ const ResultTable = (props) => {
 
   return (
     <div className="table-wrapper">
-      <h2>Result</h2>
+      <h1 className="title">Result</h1>
       <table className="table">
         <tbody>
           <tr>
