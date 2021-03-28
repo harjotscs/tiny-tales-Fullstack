@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/harjotscs/tiny-tales-Fullstack">
-    <img src="testcases/screenshot1.png" alt="Logo" width="80" height="80">
+    <img src="client\public\logo512.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Terribly Tiny Tales Assignment</h3>
@@ -229,7 +229,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Testcase 1:
 
-   [![Tiny Tales Frontend ScreenShot][product-screenshot3]](https://harjot-assignment.vercel.app/)
+   [![Tiny Tales Frontend ScreenShot][product-screenshot2]](https://harjot-assignment.vercel.app/)
 
 - Data: 1,2,3
 - Output:
@@ -240,7 +240,7 @@ To get a local copy up and running follow these simple steps.
 
    [![Tiny Tales Frontend ScreenShot][product-screenshot7]](https://harjot-assignment.vercel.app/)
 
-- Data: 1,2,3
+- Data: 1,2,3,4,5,6,7,8,9,10,11,12,13
 - Output:
 
 [![Tiny Tales Frontend ScreenShot][product-screenshot6]](https://harjot-assignment.vercel.app/)
