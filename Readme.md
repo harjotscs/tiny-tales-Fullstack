@@ -26,6 +26,8 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#backend-api">Backend API</a></li>
+        <li><a href="#frontend">Frontend</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
