@@ -6,7 +6,7 @@
   <h3 align="center">Terribly Tiny Tales Assignment</h3>
 
   <p align="center">
-    The backend API of the project is implemented using node js and frontent part in developed using React js library keeping in mind using minimal dependencies.
+    The backend API of the project is implemented using node js and frontend part in developed using React js library keeping in mind using minimal dependencies.
     <br />
     <a href="#about-the-project"><strong>Read More »</strong></a>
     <br />
