@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/harjotscs/tiny-tales-Fullstack">
-    <img src="testcases/Screenshot1.png" alt="Logo" width="80" height="80">
+    <img src="testcases/screenshot1.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Terribly Tiny Tales Assignment</h3>
@@ -36,7 +36,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#testcases">Testcases</a></li>
+    <li><a href="#testcases">Test Cases</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -228,25 +228,35 @@ To get a local copy up and running follow these simple steps.
 ## Testcases
 
 1. Testcase 1:
+
    [![Tiny Tales Frontend ScreenShot][product-screenshot3]](https://harjot-assignment.vercel.app/)
 
 - Data: 1,2,3
-- Output:[![Tiny Tales Frontend ScreenShot][product-screenshot9]](https://harjot-assignment.vercel.app/)
+- Output:
+
+[![Tiny Tales Frontend ScreenShot][product-screenshot9]](https://harjot-assignment.vercel.app/)
 
 2. Testcase 2:
+
    [![Tiny Tales Frontend ScreenShot][product-screenshot7]](https://harjot-assignment.vercel.app/)
 
 - Data: 1,2,3
-- Output:[![Tiny Tales Frontend ScreenShot][product-screenshot6]](https://harjot-assignment.vercel.app/)
+- Output:
+
+[![Tiny Tales Frontend ScreenShot][product-screenshot6]](https://harjot-assignment.vercel.app/)
 
 3. Testcase 3:
+
    [![Tiny Tales Frontend ScreenShot][product-screenshot12]](https://harjot-assignment.vercel.app/)
 
 - Data: 5,6,9,12,18,20,25,30,32,36,37,38,40,42,45,47,49,50
-- Output:[![Tiny Tales Frontend ScreenShot][product-screenshot5]](https://harjot-assignment.vercel.app/)
-- Output:[![Tiny Tales Frontend ScreenShot][product-screenshot4]](https://harjot-assignment.vercel.app/)
+- Output:
 
-_Various other testcases along with data, mentioned in [testcases folder](testcases)_
+[![Tiny Tales Frontend ScreenShot][product-screenshot5]](https://harjot-assignment.vercel.app/)
+
+[![Tiny Tales Frontend ScreenShot][product-screenshot4]](https://harjot-assignment.vercel.app/)
+
+_Various other testcases along with these and data, mentioned in [testcases folder](testcases)_
 
 <!-- CONTACT -->
 
@@ -263,8 +273,10 @@ Project Link: [https://github.com/harjotscs/tiny-tales-Fullstack](https://github
 [backend-screenshot11]: testcases/screenshot11.png
 [product-screenshot2]: testcases/screenshot2.png
 [product-screenshot3]: testcases/screenshot3.png
+[product-screenshot4]: testcases/screenshot4.png
 [product-screenshot5]: testcases/screenshot5.png
 [product-screenshot6]: testcases/screenshot6.png
 [product-screenshot7]: testcases/screenshot7.png
 [product-screenshot8]: testcases/screenshot8.png
 [product-screenshot9]: testcases/screenshot9.png
+[product-screenshot12]: testcases/screenshot12.png
